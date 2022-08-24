@@ -8,7 +8,41 @@
     <title>APP Cursos</title>
   </head>
   <body>
-    <div class="ed-grid m-grid-4 s-grid-2" id="cursos"></div>
+    <div class="ed-grid">
+      <h1>EducaTEC</h1>
+      <form action="" id="formCursos">
+        <p class="big">Registrar Cursos:</p>
+        <div class="ed-grid m-grid-2">
+          <div class="form-item">
+            <label>
+              Nombre del curso:
+              <input type="text" name="nombreCurso" required />
+            </label>
+          </div>
+          <div class="form-item">
+            <label>
+              Imagen del curso:
+              <input type="text" name="imagenCurso" required />
+            </label>
+          </div>
+          <div class="form-item">
+            <label>
+              Sesiones:
+              <input type="number" min="1" name="sesionesCurso" required />
+            </label>
+          </div>
+          <div class="form-item m-py-3">
+            <input class="button" type="submit" name="nombreCurso" value="Crear Curso" />
+          </div>
+        </div>
+        <span class="small">Para la imagen utilizar esta ruta: ../img/curso-html.jpg</span> <br />
+        <span class="smaller">Solo tenemos 5 imagenes: curso-html.jpg, curso-css.jpg, curso-html.git, curso-angular.jpg, curso-vue.jpg,</span>
+      </form>
+    </div>
+    <div class="s-center m-grid-12">
+      <h2>Listado de Cursos</h2>
+    </div>
+    <div class="ed-grid m-grid-4 s-grid-2 row-gap" id="cursos"></div>
     <script type="module" src="./scripts/index.js"></script>
   </body>
 </html>
