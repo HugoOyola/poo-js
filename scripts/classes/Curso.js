@@ -1,9 +1,8 @@
 export default class Curso{
-  constructor(nombre,poster,sesiones,docente){
+  constructor(nombre,poster,sesiones){
     this.nombre = nombre
     this.poster = poster
     this.sesiones = sesiones
-    this.docente = docente
     this.inscritos = []
   }
 
@@ -17,10 +16,6 @@ export default class Curso{
 
   getSesiones(){
     return this.sesiones
-  }
-
-  getDocente(){
-    return this.docente
   }
 
   getInscritos(){
@@ -37,10 +32,6 @@ export default class Curso{
 
   setSesiones(sesiones){
     this.sesiones = sesiones
-  }
-
-  setDocente(docente){
-    this.docente = docente
   }
 
   setInscritos(inscritos){
